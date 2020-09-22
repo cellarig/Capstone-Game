@@ -1,5 +1,7 @@
 #include "game.h"
+
 #include <iostream>
+
 #include "SDL.h"
 
 Game::Game(std::size_t grid_width, std::size_t grid_height)
@@ -36,7 +38,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(score, frame_count);
+      renderer.UpdateScore(score, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
     }

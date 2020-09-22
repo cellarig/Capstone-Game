@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "controller.h"
 #include "game.h"
 #include "renderer.h"
@@ -11,7 +12,8 @@ int main() {
   constexpr std::size_t kGridWidth{32};
   constexpr std::size_t kGridHeight{32};
 
-  Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
+  Renderer renderer("Snake Game", kScreenWidth, kScreenHeight, kGridWidth,
+                    kGridHeight);
   Controller controller;
   Game game(kGridWidth, kGridHeight);
   game.Run(controller, renderer, kMsPerFrame);
