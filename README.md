@@ -31,5 +31,5 @@ In this project, you can build your own C++ application or extend this Snake gam
 4. Run it: `./SnakeGame`.
 
 ## Credits
-sprites and sound made by eugeneloza: https://opengameart.org/content/snake-sprites-sound
-meteor sprite taken from http://pixelartmaker.com/art/8c9729502e51217
+* sprites and sound made by eugeneloza: https://opengameart.org/content/snake-sprites-sound
+* meteor sprite taken from http://pixelartmaker.com/art/8c9729502e51217
