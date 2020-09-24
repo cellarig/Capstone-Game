@@ -1,0 +1,3 @@
+/home/cellota/repo/Snake-Crossing/build/CMakeFiles/rebuild_cache.dir
+/home/cellota/repo/Snake-Crossing/build/CMakeFiles/edit_cache.dir
+/home/cellota/repo/Snake-Crossing/build/CMakeFiles/SnakeGame.dir
