@@ -2,6 +2,7 @@
 #define SNAKE_H
 
 #include <vector>
+
 #include "SDL.h"
 
 class Snake {
@@ -12,7 +13,10 @@ class Snake {
       : grid_width(grid_width),
         grid_height(grid_height),
         head_x(grid_width / 2),
-        head_y(grid_height / 2) {}
+        head_y(grid_height / 2) {
+    SDL_Point tail = {static_cast<int>(head_x), static_cast<int>(head_y) + 1};
+    body.push_back(tail);
+  }
 
   void Update();
 
