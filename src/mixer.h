@@ -1,5 +1,5 @@
-#ifndef SOUNDMAKER_H_
-#define SOUNDMAKER_H_
+#ifndef MIXER_H_
+#define MIXER_H_
 
 #include "SDL_mixer.h"
 
@@ -15,4 +15,4 @@ class Mixer {
   Mix_Chunk* mSnakeEating;
 };
 
-#endif /* SOUNDMAKER_H_ */
+#endif /* MIXER_H_ */
