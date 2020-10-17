@@ -1,13 +1,17 @@
 #include "game.h"
+
 #include <iostream>
+
 #include "SDL.h"
 
-Game::Game(std::size_t grid_width, std::size_t grid_height)
+Game::Game(std::size_t grid_width, std::size_t grid_height, Mixer const &mixer)
     : snake(grid_width, grid_height),
       engine(dev()),
       random_w(0, static_cast<int>(grid_width)),
-      random_h(0, static_cast<int>(grid_height)) {
+      random_h(0, static_cast<int>(grid_height)),
+      sound_effects_mixer(mixer) {
   PlaceFood();
+  sound_effects_loaded = sound_effects_mixer.LoadSoundEffects();
 }
 
 void Game::Run(Controller const &controller, Renderer &renderer,
@@ -75,6 +79,7 @@ void Game::Update() {
 
   // Check if there's food over here
   if (food.x == new_x && food.y == new_y) {
+    if (sound_effects_loaded) sound_effects_mixer.PlayEatingSound();
     score++;
     PlaceFood();
     // Grow snake and increase speed.

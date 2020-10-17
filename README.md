@@ -5,7 +5,7 @@ This is a repo for the Capstone project submission in the [Udacity C++ Nanodegre
 ---
 ## Expected Behavior
 
-<img src="snake_game.gif"/>
+<img src="snake_game2.gif"/>
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -36,39 +36,47 @@ Following described rubric points addressed.
 ### 1. README (All Rubric Points REQUIRED)
 
 * A README with instructions is included with the project [x]
-* The README indicates which project is chosen []
+* The README indicates which project is chosen [x]
 * The README includes information about each rubric point addressed [x]
 
 ### 2. Compiling and Testing (All Rubric Points REQUIRED)
 
-* The submission must compile and run []
+* The submission must compile and run [x]
 
 ### 3. Loops, Functions, I/O
 
 * The project demonstrates an understanding of C++ functions and control structures [x]
+    * renderer.cpp line 89 - 166
 * The project reads data from a file and process the data, or the program writes data to a file [x]
+    * mixer.cpp line 16, renderer.cpp line 60 - 61
 * The project accepts user input and processes the input [x]
+    * controller.cpp line 12 - 41
 
 ### 4. Object Oriented Programming
 
 * The project uses Object Oriented Programming techniques [x]
 * Classes use appropriate access specifiers for class members [x]
 * Class constructors utilize member initialization lists [x]
-* Classes abstract implementation details from their interfaces []
-* Classes encapsulate behavior []
-* Classes follow an appropriate inheritance hierarchy []
+* Classes abstract implementation details from their interfaces [x]
+* Classes encapsulate behavior [x]
+* Classes follow an appropriate inheritance hierarchy [x]
+    * texture.h
 * Overloaded functions allow the same function to operate on different parameters []
-* Derived class functions override virtual base class functions []
+* Derived class functions override virtual base class functions [x]
+    * texture.h line 28 & 36
 * Templates generalize functions in the project []
 
 ### 5. Memory Management
 
-* The project makes use of references in function declarations []
-* The project uses destructors appropriately []
+* The project makes use of references in function declarations [x]
+    * game.h line 14 - 15
+* The project uses destructors appropriately [x]
+    * texture.cpp line 7, mixer.cpp line 12
 * The project uses scope / Resource Acquisition Is Initialization (RAII) where appropriate []
 * The project follows the Rule of 5 []
 * The project uses move semantics to move data, instead of copying it, where possible []
-* The project uses smart pointers instead of raw pointers []
+* The project uses smart pointers instead of raw pointers [x]
+    * renderer.h line 31 - 32
 
 ### 6. Concurrency
 
@@ -76,3 +84,8 @@ Following described rubric points addressed.
 * A promise and future is used in the project []
 * A mutex or lock is used in the project []
 * A condition variable is used in the project []
+
+#### Credits
+
+ * snake sprites and sound effects made by eugeneloza: https://opengameart.org/content/snake-sprites-sound
+ * car sprites taken from https://ipixl.itch.io/city-cars
